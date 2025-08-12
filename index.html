@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Pokémon Card Viewer</h1>
+    <form action="" id="pokemon-form">
+      <input
+        type="number"
+        placeholder="Between 1-20 "
+        min="1"
+        max="20"
+        required
+        id="pokemon-count"
+      />
+      <select name="" id="pokemon-type">
+        <option value="">Select Type</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+        <option value="psychic">Psychic</option>
+        <option value="normal">Normal</option>
+      </select>
+      <button type="submit">Fetch Pokemon</button>
+    </form>
+
+    <div id="loading" class="hidden">Loading ......</div>
+    <div id="error" class="error_hidden"></div>
+    <div id="pokemon-container" class="pokemon-grid"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
